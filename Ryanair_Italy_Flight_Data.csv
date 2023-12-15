@@ -1,3 +1,4 @@
 carrier,Flight_id,departure_airport,arrival_airport,date,take_off_time,landing_time,flight_time,price
-Malta Air,FR 7075,Rome-Fiumicino,Bari,2024-05-20,17:45,18:50,1:5,"27,49"
-Malta Air,FR 7077,Rome-Fiumicino,Bari,2024-05-20,20:55,22:00,1:5,"27,49"
+Malta Air,FR 824,Venice M.Polo,Naples,2024-05-25,08:25,09:45,1:20,"108,89"
+Malta Air,FR 868,Venice M.Polo,Naples,2024-05-25,12:05,13:25,1:20,"108,89"
+Malta Air,FR 1553,Venice M.Polo,Naples,2024-05-25,20:00,21:20,1:20,"108,89"
