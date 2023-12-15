@@ -43,8 +43,8 @@ except Exception as e:
 
 for j in range(1,32):
     for i in range(airport_data.shape[0]):
-
-        date_string=f"2024-05-{j}"
+        nb_day=str(j)
+        date_string=f"2024-05-{nb_day}"
         #Here is the features to scrap from ryanair website
         #df = pd.DataFrame(columns=['carrier','Flight_id','departure_airport','arrival_airport', 'date', 'take_off_time','landing_time','flight_time','price'])
         df=pd.read_csv("Ryanair_Italy_Flight_Data.csv")
