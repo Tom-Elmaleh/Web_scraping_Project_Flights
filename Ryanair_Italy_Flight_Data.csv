@@ -1,2 +1,14 @@
 carrier,Flight_id,departure_airport,arrival_airport,date,take_off_time,landing_time,flight_time,price
+Malta Air,FR 824,Venice M.Polo,Naples,2024-05-20,07:30,08:50,1:20,"59,39"
+Malta Air,FR 868,Venice M.Polo,Naples,2024-05-20,11:05,12:25,1:20,"59,39"
+Malta Air,FR 1553,Venice M.Polo,Naples,2024-05-20,16:15,17:35,1:20,"59,39"
 Malta Air,FR 810,Venice M.Polo,Bari,2024-05-20,12:10,13:30,1:20,"54,99"
+Malta Air,FR 5914,Milan-Malpensa,Naples,2024-05-20,06:50,08:25,1:35,"39,44"
+Malta Air,FR 2285,Milan-Bergame,Naples,2024-05-20,07:05,08:30,1:25,"34,09"
+Malta Air,FR 3561,Milan-Bergame,Naples,2024-05-20,10:20,11:45,1:25,"34,09"
+Malta Air,FR 5936,Milan-Malpensa,Naples,2024-05-20,15:15,16:50,1:35,"34,09"
+Malta Air,FR 5972,Milan-Malpensa,Naples,2024-05-20,19:50,21:25,1:35,"34,09"
+Malta Air,FR 3665,Milan-Bergame,Naples,2024-05-20,20:10,21:35,1:25,"34,09"
+Malta Air,FR 5816,Rome-Fiumicino,Bari,2024-05-20,06:05,07:10,1:5,Tarif Basic
+Malta Air,FR 7075,Rome-Fiumicino,Bari,2024-05-20,12:55,14:00,1:5,Tarif Basic
+Malta Air,FR 7077,Rome-Fiumicino,Bari,2024-05-20,16:05,17:10,1:5,"36,74"
