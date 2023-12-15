@@ -24,9 +24,6 @@ date_string = '2024-05-20'
 #Attention: penser à installer la librarie 'openpyxl'.
 airport_data=pd.read_excel('Airport_Data.xlsx')
 
-airport_iata_departure=airport_data['Departure_IATA'][0]
-airport_arrival=airport_data['Destination_Airport'][0]
-
 
 # Créer une nouvelle instance du navigateur
 #driver = webdriver.Chrome()
@@ -48,8 +45,8 @@ for i in range(airport_data.shape[0]):
 
     #lancement du scrap pour chaque ligne
 
-    airport_iata_departure=airport_data['Departure_IATA'][1]
-    airport_arrival=airport_data['Destination_Airport'][1]
+    airport_iata_departure=airport_data['Departure_IATA'][i]
+    airport_arrival=airport_data['Destination_Airport'][i]
 
     #Pour ne pas faire planter le code si le scripte n'arrive pas à scrapper un vol en particulier
     try:
@@ -168,7 +165,7 @@ for i in range(airport_data.shape[0]):
                 my_flight.append(data[5])
                 my_flight.append(data[4].replace(' h ', ':').replace(' m',''))
                 my_flight.append(data[8].replace(' €', ''))
-                print(my_flight)
+                #print(my_flight)
                 #Ajouter la ligne au dataframe
                 df.loc[len(df.index)] = my_flight
                 # A chaque scrappe on va exporter au fichier csv
