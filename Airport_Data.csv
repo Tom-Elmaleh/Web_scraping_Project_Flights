@@ -1,0 +1,69 @@
+Departure_Airport;Departure_IATA;Destination_Airport;Destination_IATA
+ Venise (Tous les aéroports) ;VEN; Naples ;NAP
+ Venise (Tous les aéroports) ;VEN; Palerme ;PMO
+ Venise (Tous les aéroports) ;VEN; Bari ;BRI
+ Milan (Tous les aéroports) ;MIL; Bari ;BRI
+ Milan (Tous les aéroports) ;MIL; Naples ;NAP
+ Milan (Tous les aéroports) ;MIL; Pescara ;PSR
+ Rome (Tous les aéroports) ;ROM; Bari ;BRI
+ Rome (Tous les aéroports) ;ROM; Palerme ;PMO
+ Bologne ;BLQ; Bari ;BRI
+ Bologne ;BLQ; Palerme ;PMO
+ Naples ;NAP; Gênes ;GOA
+ Naples ;NAP; Palerme ;PMO
+ Naples ;NAP; Turin ;TRN
+ Turin ;TRN; Bari ;BRI
+ Turin ;TRN; Palerme ;PMO
+ Gênes ;GOA; Palerme ;PMO
+ Gênes ;GOA; Bari ;BRI
+ Venise (Tous les aéroports) ;VEN; Naples ;NAP
+ Venise (Tous les aéroports) ;VEN; Palerme ;PMO
+ Venise (Tous les aéroports) ;VEN; Bari ;BRI
+ Milan (Tous les aéroports) ;MIL; Bari ;BRI
+ Milan (Tous les aéroports) ;MIL; Naples ;NAP
+ Milan (Tous les aéroports) ;MIL; Pescara ;PSR
+ Rome (Tous les aéroports) ;ROM; Bari ;BRI
+ Rome (Tous les aéroports) ;ROM; Palerme ;PMO
+ Bologne ;BLQ; Bari ;BRI
+ Bologne ;BLQ; Palerme ;PMO
+ Naples ;NAP; Gênes ;GOA
+ Naples ;NAP;Palerme;PMO
+ Naples ;NAP; Turin ;TRN
+ Turin ;TRN; Bari ;BRI
+ Turin ;TRN; Palerme ;PMO
+ Gênes ;GOA; Palerme ;PMO
+ Gênes ;GOA; Bari ;BRI
+ Naples ;NAP; Venise (Tous les aéroports) ;VEN
+ Palerme ;PMO; Venise (Tous les aéroports) ;VEN
+ Bari ;BRI; Venise (Tous les aéroports) ;VEN
+ Bari ;BRI; Milan (Tous les aéroports) ;MIL
+ Naples ;NAP; Milan (Tous les aéroports) ;MIL
+ Pescara ;PSR; Milan (Tous les aéroports) ;MIL
+ Bari ;BRI; Rome (Tous les aéroports) ;ROM
+ Palerme ;PMO; Rome (Tous les aéroports) ;ROM
+ Bari ;BRI; Bologne ;BLQ
+ Palerme ;PMO; Bologne ;BLQ
+ Gênes ;GOA; Naples ;NAP
+ Palerme ;PMO; Naples ;NAP
+ Turin ;TRN; Naples ;NAP
+ Bari ;BRI; Turin ;TRN
+ Palerme ;PMO; Turin ;TRN
+ Palerme ;PMO; Gênes ;GOA
+ Bari ;BRI; Gênes ;GOA
+ Naples ;NAP; Venise (Tous les aéroports) ;VEN
+ Palerme ;PMO; Venise (Tous les aéroports) ;VEN
+ Bari ;BRI; Venise (Tous les aéroports) ;VEN
+ Bari ;BRI; Milan (Tous les aéroports) ;MIL
+ Naples ;NAP; Milan (Tous les aéroports) ;MIL
+ Pescara ;PSR; Milan (Tous les aéroports) ;MIL
+ Bari ;BRI; Rome (Tous les aéroports) ;ROM
+ Palerme ;PMO; Rome (Tous les aéroports) ;ROM
+ Bari ;BRI; Bologne ;BLQ
+ Palerme ;PMO; Bologne ;BLQ
+ Gênes ;GOA; Naples ;NAP
+Palerme;PMO; Naples ;NAP
+ Turin ;TRN; Naples ;NAP
+ Bari ;BRI; Turin ;TRN
+ Palerme ;PMO; Turin ;TRN
+ Palerme ;PMO; Gênes ;GOA
+ Bari ;BRI; Gênes ;GOA
