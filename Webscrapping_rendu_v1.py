@@ -67,31 +67,31 @@ for i in range(airport_data.shape[0]):
             print(f"Une erreur s'est produite : {e}")
         try:
                 #bouton aéroport de départ
-            departure_input = WebDriverWait(driver, 2).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, "#input-button__departure"))
+            departure_input = WebDriverWait(driver, 5).until(
+                EC.visibility_of_element_located((By.CSS_SELECTOR, "#input-button__departure"))
             )
             departure_input.click()
                 # Cliquer sur l'élément "Italie"
-            italy_element = WebDriverWait(driver, 2).until(
-                EC.presence_of_element_located((By.XPATH, "/html/body/ry-tooltip/div[2]/hp-app-controls-tooltips/fsw-controls-tooltips-container/fsw-controls-tooltips/fsw-origin-container/fsw-airports/fsw-countries/div[3]/div[8]/span"))
+            italy_element = WebDriverWait(driver, 5).until(
+                EC.visibility_of_element_located((By.XPATH, "/html/body/ry-tooltip/div[2]/hp-app-controls-tooltips/fsw-controls-tooltips-container/fsw-controls-tooltips/fsw-origin-container/fsw-airports/fsw-countries/div[3]/div[8]/span"))
             )
             buttonIT=driver.find_element(By.XPATH, "/html/body/ry-tooltip/div[2]/hp-app-controls-tooltips/fsw-controls-tooltips-container/fsw-controls-tooltips/fsw-origin-container/fsw-airports/fsw-countries/div[3]/div[8]/span")
             buttonIT.click()
                 # Cliquer sur l'élément "Rome (Tous les aéroports)"=>code IATA
-            wait = WebDriverWait(driver, 2)
+            wait = WebDriverWait(driver, 5)
                 #rome_element = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "span[data-ref='airport-item__mac-name'][data-id='ROM']")))
             rome_element = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, f"span[data-ref='airport-item__mac-name'][data-id='{airport_iata_departure}']")))
                 
                 # Bouton Aéroport d'arrivée
             driver.execute_script("arguments[0].click();", rome_element)
-            destination_input = WebDriverWait(driver, 5).until(
+            destination_input = WebDriverWait(driver, 2).until(
                 EC.visibility_of_element_located((By.CSS_SELECTOR, "#input-button__destination"))
             )
             import time
                 #Netoyage de la cellule et on entre l'aéroport d'arrivée
                 #destination_input.clear()
             destination_input.send_keys(airport_arrival)
-            time.sleep(1)
+            time.sleep(3)
         except Exception as e:
             print(f"Une erreur s'est produite : {e}")
         try:

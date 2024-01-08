@@ -19,7 +19,8 @@ driver = webdriver.Chrome(ChromeDriverManager().install())
 df = pd.DataFrame(columns=['carrier','Flight_id','departure_airport','arrival_airport', 'date', 'take_off_time','landing_time','flight_time','price'])
 
 #Initialization of the variables for the first flight to scrap
-date_string = '2024-05-20'
+#date_string = '2024-05-01'
+date_string=['2024-05-01','2024-05-02','2024-05-03','2024-05-04','2024-05-05','2024-05-06','2024-05-07','2024-05-08','2024-05-09','2024-05-10','2024-05-11','2024-05-12','2024-05-13','2024-05-14','2024-05-15','2024-05-16','2024-05-17','2024-05-18','2024-05-19','2024-05-20','2024-05-21','2024-05-22','2024-05-23','2024-05-24','2024-05-25','2024-05-26','2024-05-27','2024-05-28','2024-05-29','2024-05-30','2024-05-31']
 
 #Attention: penser à installer la librarie 'openpyxl'.
 airport_data=pd.read_excel('Airport_Data.xlsx')
@@ -42,8 +43,9 @@ except Exception as e:
     print(f"Une erreur s'est produite : {e}")
 
 for j in range(1,32):
+    #Initialization of the variables for the first flight to scrap
+    #date_string = "2024-05-"+nb_day
     for i in range(airport_data.shape[0]):
-        nb_day=str(j)
         #date_string=f"2024-05-{nb_day}"
         #Here is the features to scrap from ryanair website
         #df = pd.DataFrame(columns=['carrier','Flight_id','departure_airport','arrival_airport', 'date', 'take_off_time','landing_time','flight_time','price'])
@@ -121,7 +123,7 @@ for j in range(1,32):
                 #slectionner le jour
                 #Attention, Attendre s'il est ecrit erreur
                 day_button = WebDriverWait(driver, 2).until(
-                    EC.visibility_of_element_located((By.CSS_SELECTOR, f"div.calendar-body__cell[data-id='{date_string}']"))
+                    EC.visibility_of_element_located((By.CSS_SELECTOR, f"div.calendar-body__cell[data-id='{date_string[j-1]}']"))
                 )
                 
                 # Faire défiler l'élément en vue
@@ -166,7 +168,7 @@ for j in range(1,32):
                     my_flight.append(data[3])
                     my_flight.append(data[2])
                     my_flight.append(data[6])
-                    my_flight.append(date_string)
+                    my_flight.append(date_string[j-1])
                     my_flight.append(data[1])
                     my_flight.append(data[5])
                     my_flight.append(data[4].replace(' h ', ':').replace(' m',''))
