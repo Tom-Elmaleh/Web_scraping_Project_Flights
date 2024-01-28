@@ -10,7 +10,7 @@ df = pd.read_csv("common_travels_data.csv",index_col=0)
 
 # Affichage du dataframe shuffled
 st.subheader("Aperçu des données")
-st.dataframe(df.sample(frac=1, random_state=50).reset_index().head(10))
+st.dataframe(df.sample(frac=1, random_state=50).head(10))
 
 st.subheader("Analyse comparative des voyages à travers la visualisation")
 
